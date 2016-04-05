@@ -35,7 +35,8 @@ _testmain.go
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -76,3 +77,8 @@ $RECYCLE.BIN/
 **/rebel.xml
 go-react.exe*
 *.tmp*
+node_modules
+npm-debug.log
+.DS_Store
+dist
+static
