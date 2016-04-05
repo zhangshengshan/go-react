@@ -1,0 +1,2 @@
+1.打开 设置 -> Languanges&Frameworks -> JavaScript
+   Javascript language version 选择为 JSX Harmony

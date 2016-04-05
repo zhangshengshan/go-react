@@ -1,0 +1,6 @@
+1. 安装nodejs
+   下载地址：https://nodejs.org/en/
+2. 安装webpack
+   npm install -g webpack
+3. 进入build目录， 执行安装依赖目录的命令
+   npm install
