@@ -47,7 +47,11 @@
 <div id="root">
 
 </div>
+<!--
 <script src="static/js/init.js"></script>
 <script src="static/js/bundle.js"></script>
+-->
+<script src="http://localhost:8080/init.js"></script>
+<script src="http://localhost:8080/bundle.js"></script>
 </body>
 </html>

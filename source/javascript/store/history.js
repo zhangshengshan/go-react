@@ -1,13 +1,13 @@
-import {hashHistory} from 'react-router'
+import {browserHistory} from 'react-router'
 
-const _createHashHistory = () => {
+const _createBrowserHistory = () => {
     if (global.window) {
-        return hashHistory;
+        return browserHistory;
     }
 
     return undefined;
 }
 
-const createHistory = _createHashHistory();
+const createHistory = _createBrowserHistory();
 
 export default createHistory;

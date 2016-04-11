@@ -1,5 +1,6 @@
 import {createStore, applyMiddleware, compose} from 'redux';
-import {syncHistoryWithStore} from 'react-router-redux';
+import {syncHistoryWithStore, routerReducer} from 'react-router-redux';
+import routers from './router';
 import history from '../store/history';
 import reducer from './modules/reducer';
 import middleware from './middleware'

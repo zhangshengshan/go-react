@@ -8,7 +8,12 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf static",
+    "build": "NODE_ENV=production webpack -p",
+    "dev": "webpack-dev-server --hot --progress",
+    "lint": "eslint .",
+    "test": "mocha --opts ./mocha.opts",
+    "test:watch": "npm run test -- --watch"
   },
   "author": "cloudminds",
   "license": "ISC",
@@ -45,9 +50,9 @@
     "redux": "^3.3.1",
     "redux-form": "^4.2.2",
     "redux-logger": "^2.6.1",
-    "redux-router": "^0.1.0",
     "redux-saga": "^0.9.5",
     "redux-thunk": "^2.0.1",
+    "rimraf": "^2.5.2",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.14"
   },

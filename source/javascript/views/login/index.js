@@ -6,7 +6,7 @@ import {Paper, TextField, RaisedButton} from 'material-ui';
 
 import ActionAccountCircle from 'material-ui/lib/svg-icons/action/account-circle';
 
-import * as AuthActions from '../../redux/modules/auth';
+import * as aa  from '../../actions';
 
 class Login extends Component {
     static propTypes = {
@@ -71,7 +71,7 @@ class Login extends Component {
 
     submit(event) {
         const {dispatch} = this.props;
-        const actions = bindActionCreators(AuthActions, dispatch);
+        const cc = bindActionCreators(aa, dispatch);
 
         const identity = this.refs.identity.state.hasValue;
         const password = this.refs.password.state.hasValue;
@@ -80,7 +80,7 @@ class Login extends Component {
             return;
         }
 
-        actions.login(identity, password);
+        cc.login(identity, password);
     }
 }
 

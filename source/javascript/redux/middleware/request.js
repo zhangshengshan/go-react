@@ -9,7 +9,6 @@ export default function request({dispatch}) {
         if (!type || type.constructor !== Array) {
             return next(action);
         }
-
         const [BEGIN, SUCCESS, FAILURE] = action.type;
         let [url, fetchParams] = meta.fetch;
 
